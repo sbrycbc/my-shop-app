@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<br/>
+
+### Notlar
+1. constructor, TypeScript'te veya JavaScript'te bir sınıfın (class) yapıcı fonksiyonu (constructor function) olarak bilinir ve bir sınıfın örneği (instance) oluşturulurken çağrılır. Bu fonksiyon, sınıfın yeni bir örneği oluşturulurken gerekli olan başlangıç değerlerini alır ve sınıfın özelliklerini (properties) başlatır.
