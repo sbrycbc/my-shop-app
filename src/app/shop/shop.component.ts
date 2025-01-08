@@ -20,9 +20,10 @@ export class ShopComponent {
         private productRepository: ProductRepository,
         private categoryRepository: CategoryRepository) {}
 
-    get products(): Product[]{
-        return this.productRepository.getProducts()
-    }
+   get products(): Product[] {
+    return this.productRepository.getProducts(this.selectedCategory);
+}
+
 
     get categories(): Category[]{
         return this.categoryRepository.getCategories();

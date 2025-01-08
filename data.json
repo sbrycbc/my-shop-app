@@ -1,12 +1,12 @@
 {
     "products": [
-        { "id": 1, "name": "Samsung S5", "price": 1000, "imageUrl": "1.png.png", "description": "gut" },
-        { "id": 2, "name": "Samsung S6", "price": 1000, "imageUrl": "2.png.png", "description": "sehr gut" },
-        { "id": 3, "name": "Samsung S7", "price": 1000, "imageUrl": "4.jpg.png", "description": "gut" },
-        { "id": 4, "name": "Samsung S8", "price": 1000, "imageUrl": "2.png.png", "description": "noct nict benutzen" },
-        { "id": 5, "name": "Samsung S9", "price": 1000, "imageUrl": "1.png.png", "description": "gut" },
-        { "id": 6, "name": "Samsung S10", "price": 1000, "imageUrl": "2.png.png", "description": "sehr gut" },
-        { "id": 7, "name": "Samsung S11", "price": 1000, "imageUrl": "4.jpg.png", "description": "süpii" }
+        { "id": 1, "name": "Samsung S5", "price": 1000, "imageUrl": "1.png.png", "description": "gut", "category":"Handy" },
+        { "id": 2, "name": "Samsung S6", "price": 1000, "imageUrl": "2.png.png", "description": "sehr gut", "category":"Handy" },
+        { "id": 3, "name": "Samsung S7", "price": 1000, "imageUrl": "4.jpg.png", "description": "gut" , "category":"Handy"},
+        { "id": 4, "name": "Samsung S8", "price": 1000, "imageUrl": "2.png.png", "description": "noct nict benutzen" , "category":"Handy"},
+        { "id": 5, "name": "Samsung S9", "price": 1000, "imageUrl": "1.png.png", "description": "gut" , "category":"Handy"},
+        { "id": 6, "name": "Samsung S10", "price": 1000, "imageUrl": "2.png.png", "description": "sehr gut" , "category":"Computer"},
+        { "id": 7, "name": "Samsung S11", "price": 1000, "imageUrl": "4.jpg.png", "description": "süpii" , "category":"Computer" }
     ],
     "categories": [
         { "id": 1, "name": "Handy" },
