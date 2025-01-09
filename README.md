@@ -29,3 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ### Notlar
 1. constructor, TypeScript'te veya JavaScript'te bir sınıfın (class) yapıcı fonksiyonu (constructor function) olarak bilinir ve bir sınıfın örneği (instance) oluşturulurken çağrılır. Bu fonksiyon, sınıfın yeni bir örneği oluşturulurken gerekli olan başlangıç değerlerini alır ve sınıfın özelliklerini (properties) başlatır.
+
+2. ?? operatörü, JavaScript ve TypeScript'te kullanılan "nullish coalescing operator" olarak adlandırılır. Bu operatör, bir değişkenin null veya undefined olup olmadığını kontrol eder ve eğer öyleyse bir varsayılan değer döndürür.
