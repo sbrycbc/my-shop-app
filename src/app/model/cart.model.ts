@@ -11,6 +11,7 @@ export class Cart {
 
     addItem(product: Product, quantity: number = 1) {
         let item = this.items.find(i => i.product.id == product.id);
+        
         if (item != undefined) {
             item.quantity += quantity;     
         } else {
