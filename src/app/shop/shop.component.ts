@@ -19,10 +19,8 @@ export class ShopComponent {
   
 
     constructor(
-        private productRepository: ProductRepository,
-        private categoryRepository: CategoryRepository,
-        private cart: Cart,
-        private router: Router) { }
+        private productRepository: ProductRepository     
+        ) { }
 
     get products(): Product[] {
         let index = (this.selectedPage - 1) * this.productPerPage
@@ -47,20 +45,16 @@ export class ShopComponent {
     // target null değilse ve HTMLSelectElement ise işlem yap
     if (selectElement instanceof HTMLSelectElement) {
         this.productPerPage = +selectElement.value;  // value'yu number'a dönüştür
-        this.changePage(1);
+        this.changePage(1) }
+    }
+    
+   getCategory(category: Category | null | undefined) {
+    if (category) { // Eğer category null veya undefined değilse
+        this.selectedCategory = category;
+    } else {
+        this.selectedCategory = null; // Ya da varsayılan bir değer atayın
     }
 }
 
-
-    get categories(): Category[]{
-        return this.categoryRepository.getCategories();
-    }
-     changeCategory(newCategory?: Category | null) {
-        this.selectedCategory = newCategory  ?? null;
-        
-    }
-    addProductToCart(product: Product) {
-        this.cart.addItem(product); 
-        this.router.navigateByUrl('/cart');
-    }
+  
 }
