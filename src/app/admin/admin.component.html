@@ -7,10 +7,13 @@
   <div class="row">
     <div class="col-3">
         <button routerLink="/shop" class="btn btn-outline-info w-100 mb-2 mt-3">Shop</button>
+        <button routerLinkActive="active" routerLink="/admin/main/products" class="btn btn-outline-info w-100 mb-2 mt-3">Products</button>
+        <button routerLinkActive="active" routerLink="/admin/main/categories" class="btn btn-outline-info w-100 mb-2 mt-3">Categories</button>
+        <button routerLinkActive="active" routerLink="/admin/main/orders" class="btn btn-outline-info w-100 mb-2 mt-3">Orders</button>
         <button (click)="logout()" class="btn btn-outline-danger w-100">Logout</button>
     </div>
     <div class="col-9">
-        
+        <router-outlet></router-outlet>
     </div>
   </div>
 </div>
