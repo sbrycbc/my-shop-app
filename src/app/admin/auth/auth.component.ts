@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/model/auth.service';
 
 @Component({
   selector: 'app-auth',
@@ -9,22 +10,27 @@ import { Router } from '@angular/router';
 })
 export class AuthComponent implements OnInit {
 
-  public username: string | undefined;
-  public password: string | undefined;
+  public username!: string 
+  public password!: string 
   public errorMessage: string | undefined;
   
   
-  constructor( private router:Router) { }
+  constructor(
+    private router: Router,
+    private authService:AuthService
+  ) { }
 
   ngOnInit() {
   }
   login(form: NgForm) {
     if (form.valid) {
-      if (this.username === 'admin' && this.password === '12345') {
-        this.router.navigateByUrl('/admin/main');
-      } else {
-        this.errorMessage = 'Invalid username or password';
-      }
+      this.authService.authenticate(this.username, this.password)
+        .subscribe(response => {
+          if (response) {
+            this.router.navigateByUrl('/admin/main');
+          }
+          this.errorMessage= 'Invalid username or password'
+      })
     } else {
       this.errorMessage='Bitte wieder kontrolieren!!!'
     }
