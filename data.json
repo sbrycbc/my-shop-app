@@ -97,6 +97,32 @@
       "phone": "456677",
       "email": "test@mail.com",
       "city": "adana"
+    },
+    {
+      "id": "49a7",
+      "cart": {
+        "items": [
+          {
+            "product": {
+              "id": "1",
+              "name": "Samsung S5",
+              "price": 1000,
+              "imageUrl": "1.png.png",
+              "description": "gut",
+              "category": "Handy"
+            },
+            "quantity": 2
+          }
+        ],
+        "itemCount": 2,
+        "total": 2000
+      },
+      "isSent": false,
+      "name": "user deneme",
+      "email": "deneme@mail.com",
+      "address": "adana",
+      "phone": "0658475297",
+      "city": "berlin"
     }
   ]
 }
